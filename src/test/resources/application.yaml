@@ -1,0 +1,20 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "info, health, prometheus"
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+spring:
+  main:
+    banner-mode: off
+app:
+  books:
+  - "The Hobbit"
+  - "The Great Gatsby"
